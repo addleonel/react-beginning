@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-/* Components */
-import HelloWorld from './components/HelloWorld';
+// Containers
+import App from './containers/App';
+
 
 ReactDOM.render(
-    <HelloWorld/>,
+    <App/>,
     document.getElementById('App')
 );
