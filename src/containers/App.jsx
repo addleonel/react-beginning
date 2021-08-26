@@ -16,14 +16,24 @@ const App = () => {
         <div className="App">
             <Header/>
             <Search/>
-            <Categories>
+            <Categories title="Tendencias">
                 <Carousel>
                     <CarouselItem/>
                     <CarouselItem/>
                     <CarouselItem/>
                     <CarouselItem/>
                     <CarouselItem/>
-                    
+                </Carousel>
+            </Categories>
+            <Categories title="Mi Lista">
+                <Carousel>
+                    <CarouselItem/>
+                    <CarouselItem/>
+                </Carousel>
+            </Categories>
+            <Categories title="Originales">
+                <Carousel>
+                    <CarouselItem/>
                 </Carousel>
             </Categories>
             <Footer/>
