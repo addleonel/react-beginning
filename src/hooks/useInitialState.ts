@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const useInitialState = (API) => {
+const useInitialState = (API: string) => {
     const [videos, setVideos ] = useState([]);
 
     
@@ -9,7 +9,7 @@ const useInitialState = (API) => {
             .then(response => response.json())
             .then(data => setVideos(data));
     },[]);
-
+    
     return videos;
 } 
 

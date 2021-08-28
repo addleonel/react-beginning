@@ -9,12 +9,12 @@ module.exports = {
     filename: 'bundle.js',
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.jsx?$/,
         exclude: / node_modules /,
         use: {
           loader: 'babel-loader',
@@ -45,6 +45,13 @@ module.exports = {
           }
         ]
       },
+      {
+        test: /\.tsx?$/,
+        exclude: / node_module /,
+        use: {
+          loader: 'ts-loader',
+        }
+      }
     ],
   },
   plugins: [
