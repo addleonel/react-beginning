@@ -1,13 +1,13 @@
-import React from 'react';
+import * as React from 'react';
 
 // Styles 
 import '../assets/styles/components/Carousel.scss';
 
-const Carousel = ({children}) => {
+const Carousel: React.FC<{ children: React.ReactNode}> = ({ children }) => {
     return (
         <section className="carousel">
             <div className="carousel__container">
-                {children}
+                { children }
             </div>
         </section>
     );

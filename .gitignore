@@ -1,4 +1,6 @@
 # Node template
+# Build
+dist/
 
 # Logs
 logs
@@ -71,6 +73,3 @@ typings/
 # Docs Custom
 .cache/
 yarn-error.log
-
-# Build
-dist/

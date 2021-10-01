@@ -1,9 +1,9 @@
-import React from 'react';
+import * as React from 'react';
 
 // Styles
 import '../assets/styles/components/Footer.scss';
 
-const Footer = () => {
+const Footer: React.FC = () => {
     return (
         <footer className="footer">
             <a href="/">Terminos de uso</a>
