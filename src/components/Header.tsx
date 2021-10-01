@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 // Styles
 import '../assets/styles/components/Header.scss';
@@ -7,15 +7,14 @@ import '../assets/styles/components/Header.scss';
 import logo from '../assets/static/logo-platzi-video-BW2.png';
 import userIcon from '../assets/static/user-icon.png';
 
-const Header = () => {
+const Header: React.FC = () => {
 
     return (
-       
         <header className="header">
-            <img className="header__img" src={logo} alt="Platzi Video"/>
+            <img className="header__img" src={ logo } alt="Platzi Video"/>
             <div className="header__menu">
             <div className="header__menu--profile">
-                <img src={userIcon} alt=""/>
+                <img src={ userIcon } alt=""/>
                 <p>Perfil</p>
             </div>
             <ul>
@@ -24,7 +23,6 @@ const Header = () => {
             </ul>
             </div>
         </header>
-       
     );
 }
 
