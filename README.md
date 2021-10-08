@@ -1,2 +1,2 @@
 # react-beginning
-this contain some settings
+this contain some settings: Typescript, javascript
